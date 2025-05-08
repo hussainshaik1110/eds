@@ -259,4 +259,14 @@ main .section.highlight {
 main .section.greenart .default-content-wrapper p{
     color: green;
 }
+main .section.eyebrowtext .default-content-wrapper p{
+    font-family: henly_pro-italic;
+    font-size: 1.125rem;
+    font-style: italic;
+    height: 1.625rem;
+    letter-spacing: 0;
+    line-height: 1.625rem;
+    margin-bottom: .25rem;
+    opacity: 1;
+}
     
