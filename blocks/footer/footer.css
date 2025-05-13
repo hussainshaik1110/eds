@@ -19,14 +19,14 @@ footer .footer p {
   }
 }
 
-.section contentfooter .default-content-wrapper {
+footer .section contentfooter .default-content-wrapper {
         padding: 0 3rem;
 }
 
-.section contentfooter .default-content-wrapper p{
+footer .section contentfooter .default-content-wrapper p{
         width: 20%;
 }
-.section contentfooter .default-content-wrapper ul {
+footer .section contentfooter .default-content-wrapper ul {
     display: flex;
     width: 60%;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@ footer .footer p {
     padding-left: 0;
 }
 
-.section contentfooter .default-content-wrapper ul > li {
+footer .section contentfooter .default-content-wrapper ul > li {
         flex: 0 0 50%;
 }
 
