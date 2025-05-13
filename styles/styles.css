@@ -277,7 +277,8 @@ main .section.redbutton .default-content-wrapper a{
 }
 
 main .section.contentfooter .default-content-wrapper {
-        padding: 0 3rem;
+    padding: 0 3rem;
+    display: flex;
 }
 
 main .section.contentfooter .default-content-wrapper p{
