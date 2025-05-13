@@ -332,15 +332,15 @@ main .section.contentstates .default-content-wrapper ul{
 }
 
 main .section.contentstates .default-content-wrapper ul > li {
-    color: #2b2b2b;
+    color: #161616;
     font-family: mission-gothic, Helvetica, Arial, sans-serif;
-    font-weight: 700 !important;
-    padding-bottom: .5rem;
-    padding-right: 4rem;
-    letter-spacing: -.02rem;
+    font-size: .875rem;
     line-height: 1rem;
+    padding-right: 1.938rem;
     display: inline-block;
-    font-size: 1rem;
+    font-weight: 460;
+    letter-spacing: -.02rem;
+    padding-bottom: .25rem;
 }
     
     
