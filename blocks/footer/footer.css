@@ -18,3 +18,28 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+
+.section contentfooter .default-content-wrapper {
+        padding: 0 3rem;
+}
+
+.section contentfooter .default-content-wrapper p{
+        width: 20%;
+}
+.section contentfooter .default-content-wrapper ul {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    float: inline-end;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 1.25rem;
+    padding-left: 0;
+}
+
+.section contentfooter .default-content-wrapper ul > li {
+        flex: 0 0 50%;
+}
+
+
+
