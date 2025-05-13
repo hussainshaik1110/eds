@@ -275,4 +275,26 @@ main .section.redbutton .default-content-wrapper a{
     padding: 10px;
     color: white;
 }
+
+main .section contentfooter .default-content-wrapper {
+        padding: 0 3rem;
+}
+
+main .section contentfooter .default-content-wrapper p{
+        width: 20%;
+}
+main .section contentfooter .default-content-wrapper ul {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    float: inline-end;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 1.25rem;
+    padding-left: 0;
+}
+
+main .section contentfooter .default-content-wrapper ul > li {
+        flex: 0 0 50%;
+}
     
