@@ -302,6 +302,7 @@ main .section.contentfooter .default-content-wrapper ul > li {
 
 main .section.contentcopyright .default-content-wrapper{
     margin: 0;
+    text-align: center;
 }
 
 main .section.contentcopyright .default-content-wrapper ul{
@@ -324,6 +325,7 @@ main .section.contentcopyright .default-content-wrapper ul > li {
 
 main .section.contentstates .default-content-wrapper{
     margin: 0;
+    text-align: center;
 }
 
 main .section.contentstates .default-content-wrapper ul{
