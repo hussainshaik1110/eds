@@ -412,6 +412,12 @@ main .section.contentstates .default-content-wrapper ul > li {
          width:100%;
         padding-bottom: .75rem;
      }
+
+    main .section.contentstates .default-content-wrapper ul > li:first-child {
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        width: 75%;
+    }
     
     
 }
