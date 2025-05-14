@@ -418,6 +418,10 @@ main .section.contentstates .default-content-wrapper ul > li {
         padding-bottom: 2rem;
         width: 75%;
     }
+     main .section.contentstates .default-content-wrapper ul > li {
+        padding: .5rem;
+        width: 100%;
+     }
     
     
 }
