@@ -442,6 +442,11 @@ main .section.contentstates .default-content-wrapper ul > li > a {
         padding: .5rem;
         width: 100%;
      }
+
+    @media (width >= 768px) and (width <= 1023.98px) {
+    main {
+        padding: 3.125rem 8.563rem 0;
+    }
     
     
 }
