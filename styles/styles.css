@@ -443,11 +443,10 @@ main .section.contentstates .default-content-wrapper ul > li > a {
         width: 100%;
      }
 
-    @media (width >= 768px)  {
+    @media (width >= 767px)  {
      main .section.contentfooter {
         padding: 3.125rem 8.563rem 0;
     }
-
      main .section.contentfooter .default-content-wrapper{
         display: block;
         margin-bottom: 3.063rem;
@@ -476,11 +475,7 @@ main .section.contentstates .default-content-wrapper ul > li > a {
     main .section.contentfooter .default-content-wrapper ul > li {
     padding-bottom: 2rem;
     flex: 0 0 32% !important;
-}
-    
-        
-        
-    
+}    
     
 }
     
