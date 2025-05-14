@@ -387,7 +387,15 @@ main .section.contentstates .default-content-wrapper ul > li {
     main .section.contentfooter .default-content-wrapper ul > li {
         padding-bottom: 1.25rem;
 }
-    
+    main .section.contentfooter .default-content-wrapper p > strong {
+    color: #2b2b2b;
+    font-family: mission-gothic, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-bottom: .75rem;
+    text-align: center;
+}
     
     
 }
