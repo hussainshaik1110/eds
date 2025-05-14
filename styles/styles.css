@@ -443,7 +443,7 @@ main .section.contentstates .default-content-wrapper ul > li > a {
         width: 100%;
      }
 
-    @media (width >= 767px)  {
+    @media (width > 767px)  {
      main .section.contentfooter {
         padding: 3.125rem 8.563rem 0;
     }
