@@ -340,6 +340,16 @@ main .section.contentcopyright .default-content-wrapper ul > li {
     font-size: 1rem;
 }
 
+main .section.contentcopyright .default-content-wrapper ul > li > a {
+    color: #072a79;
+    font-family: mission-gothic, Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: .06rem;
+    text-underline-offset: .32rem;
+}
+
 main .section.contentstates .default-content-wrapper{
     margin: 0;
     text-align: center;
@@ -361,6 +371,16 @@ main .section.contentstates .default-content-wrapper ul > li {
     font-weight: 460;
     letter-spacing: -.02rem;
     padding-bottom: .25rem;
+}
+
+main .section.contentstates .default-content-wrapper ul > li > a {
+    color: #072a79 !important;
+    font-family: mission-gothic, Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1rem;
+    text-decoration: underline !important;
+    text-decoration-thickness: .06rem !important;
+    text-underline-offset: .32rem;
 }
 
 @media (width <= 767.98px) {
