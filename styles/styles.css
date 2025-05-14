@@ -396,11 +396,11 @@ main .section.contentstates .default-content-wrapper ul > li {
     margin-bottom: .75rem;
     text-align: center;
 }
-    main .section.contentcopyright .default-content-wrapper{
+    main .section.contentcopyright .default-content-wrapper {
         text-align: center;
     }
 
-    main .section.contentcopyright .default-content-wrapper ul > li:first-child{
+    main .section.contentcopyright .default-content-wrapper ul > li {
         font-size: .875rem;
         line-height: 1.125rem;
         margin: 0 auto;
