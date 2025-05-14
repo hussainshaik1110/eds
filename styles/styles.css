@@ -345,5 +345,33 @@ main .section.contentstates .default-content-wrapper ul > li {
     letter-spacing: -.02rem;
     padding-bottom: .25rem;
 }
+
+@media (width <= 767.98px) {
+ main .section.contentfooter .default-content-wrapper {
+        display: block;
+        margin-bottom: 1.5rem;
+ }
+     main .section.contentfooter .default-content-wrapper p{
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+     }
+
+    main .section.contentfooter .default-content-wrapper p > picture > img{
+        display: inline-block;
+        padding-bottom: 2.25rem;
+    }
+    main .section.contentfooter .default-content-wrapper ul {
+        display: block;
+        width: 100%;
+        padding-bottom: 0;
+}
+    main .section.contentfooter .default-content-wrapper ul > li {
+        padding-bottom: 1.25rem;
+}
+    
+    
+    
+}
     
     
