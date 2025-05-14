@@ -408,6 +408,10 @@ main .section.contentstates .default-content-wrapper ul > li {
         padding-right: 0;
         width: 75%;
     }
+     main .section.contentcopyright .default-content-wrapper ul > li{
+         width:100%;
+        padding-bottom: .75rem;
+     }
     
     
 }
