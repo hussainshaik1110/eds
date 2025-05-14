@@ -298,6 +298,12 @@ main .section.contentfooter .default-content-wrapper ul {
 
 main .section.contentfooter .default-content-wrapper ul > li {
         flex: 0 0 50%;
+    color: #072a79;
+    font-family: Mission Gothic Bold, Arial, Verdana, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 460;
+    line-height: 1rem;
+    padding-bottom: .5rem;
 }
 
 main .section.contentfooter .default-content-wrapper ul > li > a {
