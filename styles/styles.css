@@ -365,6 +365,7 @@ main .section.contentstates .default-content-wrapper ul > li {
         display: block;
         width: 100%;
         padding-bottom: 0;
+        text-align: center;
 }
     main .section.contentfooter .default-content-wrapper ul > li {
         padding-bottom: 1.25rem;
