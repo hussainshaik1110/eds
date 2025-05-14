@@ -488,6 +488,15 @@ main .section.contentstates .default-content-wrapper ul > li > a {
         width: 100%;
     }
 
+    main .section.contentstates .default-content-wrapper {
+                text-align: center;
+    }
+
+    main .section.contentstates .default-content-wrapper ul > li:first-child {
+        padding-bottom: 2rem;
+        padding-right: 0;
+    }
+
     
     
 }
