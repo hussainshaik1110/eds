@@ -27,7 +27,7 @@ export default async function decorate(block) {
     const list = document.createElement('ul');
     posts.slice(0, 5).forEach((post) => {
       const item = document.createElement('li');
-      item.innerHTML = `<strong>${post.title}</strong><br>UserId-${post.userId}<br>Id-${post.id}<br>Body-${post.body}`;
+      item.innerHTML = `<strong>${post.title}</strong><br><strong>UserId</strong>-${post.userId}<br><strong>Id</strong>-${post.id}<br><strong>Body</strong>-${post.body}`;
       list.appendChild(item);
     });
   
