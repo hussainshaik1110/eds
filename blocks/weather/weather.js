@@ -1,5 +1,5 @@
 export default async function decorate(block) {
-    const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=demo&q=London';
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
   
     // Try using browser Cache API
     const cacheKey = new Request(apiUrl);
