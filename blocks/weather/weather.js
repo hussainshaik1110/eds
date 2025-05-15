@@ -24,14 +24,31 @@ export default async function decorate(block) {
   
     const posts = await response.json();
   
-    const list = document.createElement('ul');
     posts.slice(0, 5).forEach((post) => {
-      const item = document.createElement('li');
-      item.innerHTML = `<strong>${post.title}</strong><br><strong>UserId</strong>-${post.userId}<br><strong>Id</strong>-${post.id}<br><strong>Body</strong>-${post.body}`;
-      list.appendChild(item);
-    });
-  
-    block.innerHTML = `<h3>Latest Posts</h3>`;
-    block.appendChild(list);
+        const table = document.createElement('table');
+        table.style.marginBottom = '1.5rem'; 
+      
+        const titleRow = document.createElement('tr');
+        const titleCell = document.createElement('td');
+        titleCell.colSpan = 2;
+        titleCell.innerHTML = `<strong>Title - ${post.title}</strong>`;
+        titleRow.appendChild(titleCell);
+        table.appendChild(titleRow);
+      
+        const userRow = document.createElement('tr');
+        userRow.innerHTML = `<td>UserId</td><td>${post.userId}</td>`;
+        table.appendChild(userRow);
+      
+        const idRow = document.createElement('tr');
+        idRow.innerHTML = `<td>Id</td><td>${post.id}</td>`;
+        table.appendChild(idRow);
+      
+        const bodyRow = document.createElement('tr');
+        bodyRow.innerHTML = `<td>Body</td><td>${post.body}</td>`;
+        table.appendChild(bodyRow);
+      
+        block.appendChild(table);
+      });
+      
   }
   
