@@ -1,9 +1,8 @@
 export default async function decorate(block) {
     const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
   
-    // Try using browser Cache API
+    const cache = await caches.open('posts-block-cache');
     const cacheKey = new Request(apiUrl);
-    const cache = await caches.open('weather-block-cache');
   
     let response = await cache.match(cacheKey);
   
@@ -13,12 +12,26 @@ export default async function decorate(block) {
         if (response.ok) {
           await cache.put(cacheKey, response.clone());
         } else {
-          block.innerHTML = `<p>Error fetching weather data</p>`;
+          block.innerHTML = `<p>Error loading posts (status: ${response.status})</p>`;
           return;
         }
       } catch (e) {
-        block.innerHTML = `<p>Network error</p>`;
+        console.error('Fetch error:', e);
+        block.innerHTML = `<p>Network error fetching posts</p>`;
         return;
       }
     }
-}
+  
+    const posts = await response.json();
+  
+    const list = document.createElement('ul');
+    posts.slice(0, 5).forEach((post) => {
+      const item = document.createElement('li');
+      item.innerHTML = `<strong>${post.title}</strong><br>${post.body}`;
+      list.appendChild(item);
+    });
+  
+    block.innerHTML = `<h3>Latest Posts</h3>`;
+    block.appendChild(list);
+  }
+  
