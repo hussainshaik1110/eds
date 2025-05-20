@@ -1,0 +1,12 @@
+xffooter > ul {
+  display: none;
+  margin-top: 0.5em;
+  padding-left: 1em;
+}
+xffooter.open > ul {
+  display: block;
+}
+xffooter {
+  cursor: pointer;
+  position: relative;
+}
