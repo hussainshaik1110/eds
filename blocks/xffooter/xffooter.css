@@ -44,3 +44,27 @@
     height: 2.563rem;
     margin-right: 1rem;
 }
+
+.section.xffooter-container .default-content-wrapper > ul {   
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 67%;
+    flex-grow: 1;
+    padding-left: 0;
+}
+
+.section.xffooter-container .default-content-wrapper > ul > li {   
+    display: flex;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 1rem 7px .7rem;
+    position: relative;
+    align-items: center;
+    color: #161616;
+    font-family: Mission Gothic, Arial, Verdana, Tahoma, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    font-size: .875rem;
+}
+
