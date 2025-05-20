@@ -68,3 +68,9 @@
     font-size: .875rem;
 }
 
+.section.xffooter-container .default-content-wrapper > p > strong {
+    font-size: .875rem;
+    margin-top: .4rem;
+    padding: .8rem 0 .5rem;
+}
+
