@@ -1,3 +1,5 @@
+import { getMetadata } from '../../scripts/aem.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   // Select all <li> elements with a nested <ul>
   const dropdownItems = document.querySelectorAll('li > ul');
