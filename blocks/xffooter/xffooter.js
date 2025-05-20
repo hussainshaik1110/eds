@@ -7,21 +7,26 @@ export default function decorate(block) {
 
   dropdownParents.forEach((parent) => {
     parent.classList.add('dropdown');
-
     const submenu = parent.querySelector('ul');
     submenu.classList.add('dropdown-menu');
 
-    // Click to toggle dropdown
     parent.addEventListener('click', (e) => {
-      // Prevent nested <ul> clicks from closing
-      if (e.target.closest('ul') !== submenu) {
-        e.stopPropagation();
-        parent.classList.toggle('open');
-      }
+      // Prevent click bubbling from affecting nested items
+      e.stopPropagation();
+
+      // Close all other dropdowns
+      dropdownParents.forEach((other) => {
+        if (other !== parent) {
+          other.classList.remove('open');
+        }
+      });
+
+      // Toggle this one
+      parent.classList.toggle('open');
     });
   });
 
-  // Optional: close dropdown when clicking outside
+  // Close all when clicking outside
   document.addEventListener('click', () => {
     dropdownParents.forEach((parent) => parent.classList.remove('open'));
   });
