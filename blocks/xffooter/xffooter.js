@@ -1,20 +1,26 @@
-import { getMetadata } from '../../scripts/aem.js';
-console.log("My script loaded1 ✅");
+export default function decorate(block) {
+  const wrapper = block.closest('.section').querySelector('.default-content-wrapper');
+  if (!wrapper) return;
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Select all <li> elements with a nested <ul>
-  const dropdownItems = document.querySelectorAll('li > ul');
-console.log("My script loaded2 ✅");
+  // Find all parent <li> elements that contain a nested <ul>
+  const dropdownParents = wrapper.querySelectorAll('li:has(ul)');
 
-  dropdownItems.forEach(submenu => {
-    const parent = submenu.parentElement;
+  dropdownParents.forEach((parent) => {
     parent.classList.add('dropdown');
-console.log("My script loaded3 ✅");
 
-    // Add a toggle icon or just click on the parent text
-    parent.addEventListener('click', () => {
+    // Optional: create a toggle icon or add indicator
+    const toggle = document.createElement('span');
+    toggle.className = 'dropdown-toggle';
+    toggle.innerHTML = '▼'; // Simple arrow icon
+    parent.prepend(toggle);
+
+    // Hide nested menu by default
+    parent.querySelector('ul').classList.add('dropdown-menu');
+
+    // Toggle on click
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent bubbling
       parent.classList.toggle('open');
-      console.log("My script loaded4 ✅");
     });
   });
-});
+}
