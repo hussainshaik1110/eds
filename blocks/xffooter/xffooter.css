@@ -39,7 +39,7 @@
     display: flex;
 }
 
-main .section.xffooter-container .default-content-wrapper > p {
+.section.xffooter-container .default-content-wrapper > p {
     width: 8%;
     height: 2.563rem;
     margin-right: 1rem;
