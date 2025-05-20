@@ -1,12 +1,19 @@
-xffooter > ul {
-  display: none;
-  margin-top: 0.5em;
-  padding-left: 1em;
-}
-xffooter.open > ul {
-  display: block;
-}
-xffooter {
-  cursor: pointer;
+xffooter .dropdown {
   position: relative;
+  cursor: pointer;
+}
+
+xffooter .dropdown-toggle {
+  margin-right: 8px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+xffooter .dropdown-menu {
+  display: none;
+  margin-left: 1em;
+}
+
+xffooter .dropdown.open > .dropdown-menu {
+  display: block;
 }
