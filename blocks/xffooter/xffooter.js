@@ -1,8 +1,21 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-export default function decorate(block) {
-  const wrapper = block.closest('.section').querySelector('.default-content-wrapper');
+export default async function decorate(block) {
+  const metaPath = getMetadata('nav');
+  if (!metaPath) return;
+
+  // Load fragment content
+  const fragment = await loadFragment(metaPath);
+  if (!fragment) return;
+
+  // Append fragment content into the block
+  while (fragment.firstElementChild) {
+    block.append(fragment.firstElementChild);
+  }
+
+  // Wait for content to be in DOM before selecting
+  const wrapper = block.querySelector('.default-content-wrapper') || block;
   if (!wrapper) return;
 
   // ===== DROPDOWN MENU =====
@@ -24,7 +37,6 @@ export default function decorate(block) {
     });
   });
 
-  // Close all dropdowns when clicking outside
   document.addEventListener('click', () => {
     dropdownParents.forEach((parent) => parent.classList.remove('open'));
   });
@@ -36,6 +48,6 @@ export default function decorate(block) {
   wrapper.prepend(hamburger);
 
   hamburger.addEventListener('click', () => {
-    wrapper.classList.toggle('open'); // Toggle nav visibility
+    wrapper.classList.toggle('open');
   });
 }
