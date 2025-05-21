@@ -82,3 +82,44 @@
     padding: .8rem 0 .5rem;
 }
 
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger span {
+  height: 2px;
+  background: black;
+  width: 25px;
+  display: block;
+}
+
+/* Mobile Nav */
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-mobile.open {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .default-content-wrapper > ul {
+    display: none;
+  }
+
+  .default-content-wrapper.open > ul {
+    display: block;
+  }
+}
+
+
