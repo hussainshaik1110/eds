@@ -594,15 +594,15 @@ function decorateBlocks(main) {
 }
 
 /**
- * Loads a block named 'acgheader' into acgheader
- * @param {Element} acgheader acgheader element
+ * Loads a block named 'header' into header
+ * @param {Element} header header element
  * @returns {Promise}
  */
-async function loadAcgheader(acgheader) {
-  const acgheaderBlock = buildBlock('acgheader', '');
-  acgheader.append(acgheaderrBlock);
-  decorateBlock(acgheaderBlock);
-  return loadBlock(acgheaderBlock);
+async function loadHeader(header) {
+  const headerBlock = buildBlock('header', '');
+  header.append(headerrBlock);
+  decorateBlock(headerBlock);
+  return loadBlock(headerBlock);
 }
 
 /**
@@ -685,7 +685,7 @@ export {
   loadBlock,
   loadCSS,
   loadFooter,
-  loadAcgheader,
+  loadHeader,
   loadScript,
   loadSection,
   loadSections,
