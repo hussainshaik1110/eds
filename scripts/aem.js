@@ -599,7 +599,7 @@ function decorateBlocks(main) {
  * @returns {Promise}
  */
 async function loadHeader(header) {
-  const headerBlock = buildBlock('header', '');
+  const headerBlock = buildBlock('xffooter', '');
   header.append(headerBlock);
   decorateBlock(headerBlock);
   return loadBlock(headerBlock);
