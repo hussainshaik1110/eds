@@ -685,7 +685,7 @@ export {
   loadBlock,
   loadCSS,
   loadFooter,
-  loadXffooter,
+  loadAcgheader,
   loadScript,
   loadSection,
   loadSections,
