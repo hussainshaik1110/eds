@@ -594,15 +594,15 @@ function decorateBlocks(main) {
 }
 
 /**
- * Loads a block named 'header' into header
- * @param {Element} header header element
+ * Loads a block named 'xffooter' into xffooter
+ * @param {Element} xffooter xffooter element
  * @returns {Promise}
  */
-async function loadHeader(header) {
-  const headerBlock = buildBlock('header', '');
-  header.append(headerBlock);
-  decorateBlock(headerBlock);
-  return loadBlock(headerBlock);
+async function loadXffooter(xffooter) {
+  const xffooterBlock = buildBlock('xffooter', '');
+  xffooter.append(xffooterBlock);
+  decorateBlock(xffooterBlock);
+  return loadBlock(xffooterBlock);
 }
 
 /**
@@ -685,7 +685,7 @@ export {
   loadBlock,
   loadCSS,
   loadFooter,
-  loadHeader,
+  loadXffooter,
   loadScript,
   loadSection,
   loadSections,
