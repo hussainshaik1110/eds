@@ -108,19 +108,52 @@
   display: flex;
 }
 
+/* Hide menu by default on small screens */
 @media screen and (max-width: 900px) {
-  .hamburger {
+  .default-content-wrapper ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Show menu when wrapper is open */
+  .default-content-wrapper.open ul {
     display: flex;
   }
 
-  .default-content-wrapper > ul {
-    display: none;
+  /* Hamburger style */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    margin: 10px 0;
   }
 
-  .default-content-wrapper.open > ul {
+  .hamburger span {
     display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
   }
 }
+
+/* On desktop, always show menu and hide hamburger */
+@media screen and (min-width: 901px) {
+  .default-content-wrapper ul {
+    display: flex !important;
+    gap: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
 
 
 
