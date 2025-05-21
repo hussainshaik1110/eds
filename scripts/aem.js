@@ -600,7 +600,7 @@ function decorateBlocks(main) {
  */
 async function loadHeader(header) {
   const headerBlock = buildBlock('header', '');
-  header.append(headerrBlock);
+  header.append(headerBlock);
   decorateBlock(headerBlock);
   return loadBlock(headerBlock);
 }
