@@ -112,13 +112,13 @@
 @media screen and (max-width: 900px) {
   .default-content-wrapper ul {
     display: none;
-    flex-direction: column;
-    gap: 1rem;
   }
 
   /* Show menu when wrapper is open */
   .default-content-wrapper.open ul {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   /* Hamburger style */
