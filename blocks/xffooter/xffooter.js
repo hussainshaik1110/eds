@@ -31,5 +31,40 @@ export default function decorate(block) {
     dropdownParents.forEach((parent) => parent.classList.remove('open'));
   });
 
+  document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.querySelector('.default-content-wrapper');
+
+  // Create hamburger
+  const hamburger = document.createElement('div');
+  hamburger.className = 'hamburger';
+  hamburger.innerHTML = '<span></span><span></span><span></span>';
+  wrapper.prepend(hamburger);
+
+  // Toggle menu
+  hamburger.addEventListener('click', () => {
+    wrapper.classList.toggle('open');
+  });
+
+  // Dropdown logic
+  const dropdownParents = wrapper.querySelectorAll('li:has(ul)');
+
+  dropdownParents.forEach((parent) => {
+    parent.classList.add('nav-drop');
+
+    parent.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Close all other dropdowns
+      dropdownParents.forEach((el) => {
+        if (el !== parent) el.classList.remove('open');
+      });
+
+      // Toggle current
+      parent.classList.toggle('open');
+    });
+  });
+});
+
+
  
 }
