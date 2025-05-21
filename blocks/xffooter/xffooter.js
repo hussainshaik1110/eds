@@ -30,4 +30,14 @@ export default function decorate(block) {
   document.addEventListener('click', () => {
     dropdownParents.forEach((parent) => parent.classList.remove('open'));
   });
+
+  const hamburger = document.createElement('div');
+  hamburger.className = 'hamburger';
+  hamburger.innerHTML = '<span></span><span></span><span></span>';
+  block.prepend(hamburger);
+
+  hamburger.addEventListener('click', () => {
+    wrapper.classList.toggle('open');
+  });
+}
 }
