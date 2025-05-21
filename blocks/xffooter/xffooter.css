@@ -110,7 +110,7 @@
 
 /* Hide menu by default on small screens */
 @media screen and (max-width: 900px) {
-  .default-content-wrapper ul {
+  .section.xffooter-container .default-content-wrapper > ul {
     display: none;
   }
 
