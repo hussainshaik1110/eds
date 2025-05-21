@@ -2,8 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 export default function decorate(block) {
-  // Use block directly instead of .default-content-wrapper
-  const wrapper = block;
+  const wrapper = block.closest('.section').querySelector('.default-content-wrapper');
   if (!wrapper) return;
 
   // ===== DROPDOWN MENU =====
@@ -37,6 +36,6 @@ export default function decorate(block) {
   wrapper.prepend(hamburger);
 
   hamburger.addEventListener('click', () => {
-    wrapper.classList.toggle('open');
+    wrapper.classList.toggle('open'); // Toggle nav visibility
   });
 }
