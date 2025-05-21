@@ -114,13 +114,12 @@
     display: none;
   }
 
-  /* Show menu when wrapper is open */
-  .section.xffooter-container .default-content-wrapper.open ul {
+  .section.xffooter-container .default-content-wrapper.open > ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-
+    
   /* Hamburger style */
   .hamburger {
     display: flex;
