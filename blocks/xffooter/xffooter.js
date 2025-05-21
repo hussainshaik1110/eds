@@ -1,8 +1,6 @@
-import { getMetadata } from '../../scripts/aem.js';
-import { loadFragment } from '../fragment/fragment.js';
-
 export default function decorate(block) {
-  const wrapper = block.closest('.section').querySelector('.default-content-wrapper');
+  // Use block directly instead of .default-content-wrapper
+  const wrapper = block;
   if (!wrapper) return;
 
   // ===== DROPDOWN MENU =====
@@ -36,6 +34,6 @@ export default function decorate(block) {
   wrapper.prepend(hamburger);
 
   hamburger.addEventListener('click', () => {
-    wrapper.classList.toggle('open'); // Toggle nav visibility
+    wrapper.classList.toggle('open');
   });
 }
