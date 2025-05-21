@@ -1,6 +1,6 @@
 import {
   buildBlock,
-  loadXffooter,
+  loadAcgheader,
   loadFooter,
   decorateButtons,
   decorateIcons,
@@ -103,7 +103,7 @@ async function loadLazy(doc) {
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadXffooter(doc.querySelector('xffooter'));
+  loadAcgheader(doc.querySelector('acgheader'));
   loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
