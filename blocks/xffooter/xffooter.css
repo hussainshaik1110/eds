@@ -142,17 +142,7 @@
   }
 }
 
-/* On desktop, always show menu and hide hamburger */
-@media screen and (min-width: 901px) {
-  .default-content-wrapper ul {
-    display: flex !important;
-    gap: 2rem;
-  }
 
-  .hamburger {
-    display: none;
-  }
-}
 
 
 
