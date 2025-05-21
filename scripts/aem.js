@@ -594,15 +594,15 @@ function decorateBlocks(main) {
 }
 
 /**
- * Loads a block named 'xffooter' into xffooter
- * @param {Element} xffooter xffooter element
+ * Loads a block named 'acgheader' into acgheader
+ * @param {Element} acgheader acgheader element
  * @returns {Promise}
  */
-async function loadXffooter(xffooter) {
-  const xffooterBlock = buildBlock('xffooter', '');
-  xffooter.append(xffooterBlock);
-  decorateBlock(xffooterBlock);
-  return loadBlock(xffooterBlock);
+async function loadAcgheader(acgheader) {
+  const acgheaderBlock = buildBlock('acgheader', '');
+  acgheader.append(acgheaderrBlock);
+  decorateBlock(acgheaderBlock);
+  return loadBlock(acgheaderBlock);
 }
 
 /**
